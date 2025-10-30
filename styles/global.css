@@ -7,7 +7,7 @@
 :root{
   /* Fontes */
   --poppins: 'Poppins', sans-serif;
-  --text: 400 1rem/1.5 var((--poppins));
+  --text: 400 1rem/1.5 var(--poppins);
   --text-sm:  400 0.875rem/140% var(--poppins);
   --heading1: 700 2rem/120% var(--poppins);
   --heading2: 700 1.5rem/120% var(--poppins);
@@ -42,6 +42,15 @@
 }
 
 body{
-  font: var(--regular);
+  font: var(--text);
+  color: var(--text-secondary);
 
+}
+
+h1, h2{
+  color: var(--text-primary);
+}
+
+img{
+  max-width: 100%;
 }
