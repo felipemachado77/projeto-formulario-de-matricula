@@ -46,3 +46,16 @@ select{
   background: url(../../assets/interface-icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
 }
 
+.adress > .flex{
+  gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]){
+  opacity: 50%;
+}
+input[disabled]{
+  background-color: var(--surface-disabled);
+  color: var(--text-primary);
+
+}
+
