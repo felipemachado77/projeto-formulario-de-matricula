@@ -74,6 +74,7 @@
             </div>
               
           </fieldset>
+
           <fieldset class="adress">
             <legend>Endereço residencial</legend>
 
@@ -81,7 +82,7 @@
               <label for="CEP">CEP</label>
               <input type="text" id="CEP", name="CEP">
             </div>
-            
+
             <div class="flex">
               <div class="input-wrapper flex-2">
               <label for="street">Rua</label>
@@ -107,6 +108,35 @@
             </div>
 
           </fieldset>
+
+          <fieldset class="guardian">
+            <legend>Informações do responsável</legend>
+
+             <div class="input-wrapper">
+              <label for="guardian">Nome do responsável</label>
+              <input type="text" id="guardian" name="guardian">
+              <small>Principal responsável legal e contato de emergência</small>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(10) 9 8765-4321">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input type="email" id="mail" name="mail" required>
+              
+              <div class="error">
+              <img src="assets/alert-circle.svg" alt="Ícone de erro">
+              <span>Insira um e-mail válido</span>
+            </div>
+            </div>
+          
+
+
+              
+          </fieldset>
         </form>
       </div>
     </main>
@@ -124,6 +154,6 @@
       </div>
     </aside>
   </div>
-  
+
 </body>
 </html>

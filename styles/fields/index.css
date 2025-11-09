@@ -59,3 +59,28 @@ input[disabled]{
 
 }
 
+input:invalid{
+  border: 0.125rem solid var(--semantic-error);
+}
+
+input + small{
+  font: var(--text-sm);
+  color: #78716C;
+  display: inline-block;
+  margin-top: 0.25rem;
+
+}
+
+input[required]+ .error{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font: var(--text-sm);
+  margin-top: 0.25rem;
+  color: var(--semantic-error);
+}
+
+input:not(:focus):valid + .error{
+  display: none;
+}
+
